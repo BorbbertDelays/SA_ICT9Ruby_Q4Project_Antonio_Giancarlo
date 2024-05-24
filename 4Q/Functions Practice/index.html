@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Functions Sample</title>
+</head>
+<body>
+    <h1>JavaScript Event Handling</h1>
+    <p>Sample Function that performs simple Calculation</p>
+
+    <p id="uhmm"></p>
+    <p id="okay"></p>
+
+    <script>
+        // Call function and suply params.
+        let x = myFunction(6, 7);
+        let y = myFunction(8,9)
+        document.getElementById("uhmm").innerHTML = "Answer: " + x + "<p>" 
+            + "Answer: " + y + "</p>" ;
+
+        // Create a function named myFunction with 2 params.
+        function myFunction(a, b) {
+            // Compute for the total of two numbers
+            return a + b;
+        }
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Main Page - Final Project</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+    <!--CSS-->
+    <style>
+     .navbar-brand {
+            position: relative;
+            top: -1px;
+        }
+        .card {
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            background-color: #f9f9f9;
+            border: 1px solid #e5e5e5;
+        }
+    .q2 {
+          background: linear-gradient(to right, #8C6582, #131026, #373259);
+      }
+    .q1 {
+          background: linear-gradient(to right, #6B4226, #000000);
+      }
+    .q3 {
+          background: linear-gradient(to right, #0062ff, #00eeff);
+        }
+    .q4 {
+          background: linear-gradient(to right, #00ff26, #ffea00);
+        }
+     .navbar {
+          background: linear-gradient(to right, #54B4D3, white);
+      }
+      .profile-card-container {
+          position: absolute;
+          right: 5rem;
+          top: 50%;
+          transform: translateY(-40%);
+      }
+     .profile-card {
+          border: 1px solid #e5e5e5;
+          padding: 30px;
+          text-align: center;
+      }
+    </style>
+</head>
+<body class="bg-info">
+
+    <!--navbar-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+          <a class="navbar-brand" href="#"><img src="logo.png" alt="" width="50" height="50"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav me-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Modal1">1st Quarter</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#Modal2">2nd Quarter</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">3rd Quarter</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalFm">Forms, Buttons, Alerts</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalIgt">Images and Tables</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalNv">Navbar</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal3">Exercise 1</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal4">Seatwork 1</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal5">Exercise 2</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal6">Seatwork 2</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal7">Project</a></li>
+                </ul>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown1" role="button" data-bs-toggle="dropdown" aria-expanded="false">4th Quarter</a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalEvent">Event Handling</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalFunc">Functions Practice</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalVars">Vars and Ops Practice</a></li>
+                    <li><hr class="dropdown-divider"></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal8">Seatwork 1</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal9">Seatwork 2</a></li>
+                    <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal10">Quiz 1</a></li>
+                </ul>
+              </li>
+            </ul>
+            <!-- logout button -->
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <button class="btn btn-outline-danger ms-2" type="button" onclick="logOut()">Log out</button>
+          </div>
+        </div>
+      </nav>
+
+    <br><br>
+
+    <div class="container">
+        <h1 class="text-white">Online Portfolio</h1>
+        <div class="row">
+            <!-- 1q project -->
+            <div class="col-md-3 m-1">
+                <div class="card q1" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">1st Quarter Project</h5>
+                        <p class="card-text text-white">Creating a Character List of Noli Me Tangere (10/19/23)</p>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal1">View Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2q project -->
+            <div class="col-md-3 m-1">
+                <div class="card q2" style="width: 15rem;">
+                    <div class="card-body text-white" >
+                        <h5 class="card-title text-white">2nd Quarter Project</h5>
+                        <p class="card-text text-white">Creating a Photo Gallery (01/18/24)</p>
+                        <a href="#" class="btn btn-dark" data-bs-toggle="modal" data-bs-target="#Modal2">View Website</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3q works -->
+            <div class="col-md-3 m-1">
+                <div class="card q3" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">3rd Quarter</h5>
+                        <p class="card-text text-white">View all 3rd Quarter files here</p>
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                View Websites
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalFm">Forms, Buttons, Alerts</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalIgt">Images and Tables</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalNv">Navbar</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal3">Exercise 1</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal4">Seatwork 1</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal5">Exercise 2</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal6">Seatwork 2</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal7">Project</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 4q works -->
+            <div class="col-md-3 m-1">
+                <div class="card q4" style="width: 15rem;">
+                    <div class="card-body">
+                        <h5 class="card-title text-white">4th Quarter</h5>
+                        <p class="card-text text-white">View all 4th Quarter files here</p>
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                View Websites
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalEvent">Event Handling</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalFunc">Functions Practice</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#ModalVars">Vars and Ops Practice</a></li>
+                                <li><hr class="dropdown-divider"></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal8">Seatwork 1</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal9">Seatwork 2</a></li>
+                                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#Modal10">Quiz 1</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+
+    <!-- about me -->
+    <div class="profile-card-container m-1">
+        <div class="card profile-card mt-0" style="width: 20rem;">
+            <img src="pfp.jpg" alt="Profile" class="img-fluid mb-3 rounded-circle" style="height: 15rem;">
+            <div class="card-body">
+                <h4 class="card-text text-center">Gian Antonio</h4>
+                <p class="card-text text-center"><strong>Born: </strong>January 12, 2009</p>
+                <p class="card-text text-center"><strong>Grade & Section: </strong>9-Ruby</p>
+                <p class="card-text text-center"><strong>School: </strong>O.B. Montessori Center</p>
+                <p class="card-text text-center"><strong>Hobbies: </strong>Music, Coding, Content Creation, Card Magic</p>
+              </div>
+        </div>
+    </div>
+
+    <!-- 1q modal -->
+    <div class="modal fade" id="Modal1" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel"><a href="ICT PROJECT Q1/SA_ICT9Ruby_Q1Project_Page1_Antonio_Giancarlo.html">1st Quarter Website</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe1" width="100%" height="600" src="ICT PROJECT Q1/SA_ICT9Ruby_Q1Project_Page1_Antonio_Giancarlo.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2q modal -->
+    <div class="modal fade" id="Modal2" tabindex="-1" aria-labelledby="ModalLabel2" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel2"><a href="https://borbbertdelays.github.io/ICT9Ruby_Q2PROJ_Antonio_Giancarlo/">2nd Quarter Website</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe2" width="100%" height="600" src="https://borbbertdelays.github.io/ICT9Ruby_Q2PROJ_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 3q modals -->
+
+    <!--Practice Files-->
+    <div class="modal fade" id="ModalFm" tabindex="-1" aria-labelledby="ModalLabelFm" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelFm">Forms, Buttons, Alerts</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="IframeFm" width="100%" height="600" src="3Q/Forms, Buttons, Alerts/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ModalIgt" tabindex="-1" aria-labelledby="ModalLabelIgt" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelIgt">Images and Tables</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="IframeIgt" width="100%" height="600" src="3Q/Images and Tables/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ModalNv" tabindex="-1" aria-labelledby="ModalLabelNv" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelNv">Navbar</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="IframeNv" width="100%" height="600" src="3Q/Nav Bar/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Main Files-->
+    <div class="modal fade" id="Modal3" tabindex="-1" aria-labelledby="ModalLabel3" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel3"><a href="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Ex1_Antonio_Giancarlo/">3rd Quater - Exercise 1</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe3" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Ex1_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal4" tabindex="-1" aria-labelledby="ModalLabel4" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel4"><a href="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Sw1_Antonio_Giancarlo/">3rd Quater - Seatwork 1</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe4" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Sw1_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal5" tabindex="-1" aria-labelledby="ModalLabel5" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel5"><a href="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Ex2Navbar_Antonio_Giancarlo/">3rd Quater - Exercise 2</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe5" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Ex2Navbar_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal6" tabindex="-1" aria-labelledby="ModalLabel6" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel6"><a href="https://borbbertdelays.github.io/SA_ICT9R_Q3Sw2_Antonio_Giancarlo/">3rd Quater - Seatwork 2</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe6" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9R_Q3Sw2_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal7" tabindex="-1" aria-labelledby="ModalLabel7" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel7"><a href="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Project_Antonio_Giancarlo/">3rd Quater - Project</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe7" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9Ruby_Q3Project_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--4q works-->
+
+    <!--Practice Files-->
+    <div class="modal fade" id="ModalEvent" tabindex="-1" aria-labelledby="ModalLabelEvent" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelEvent"><a href="4Q/Event Handling/index.html">Event Handling</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="IframeEvent" width="100%" height="600" src="4Q/Event Handling/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ModalFunc" tabindex="-1" aria-labelledby="ModalLabelFunc" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelFunc"><a href="4Q/Functions Practice/index.html">Event Handling</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="IframeFunc" width="100%" height="600" src="4Q/Functions Practice/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="ModalVars" tabindex="-1" aria-labelledby="ModalLabelVars" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabelVars"><a href="4Q/Vars and Ops Practice/index.html">Variables and Operators Practice</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="IframeVars" width="100%" height="600" src="4Q/Vars and Ops Practice/index.html" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!--Main Files-->
+    <div class="modal fade" id="Modal8" tabindex="-1" aria-labelledby="ModalLabel8" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel8"><a href="https://borbbertdelays.github.io/SA_ICT9Ruby_Q4SW1_Antonio_Giancarlo/">4th Quater - Seatwork 1</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe8" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9Ruby_Q4SW1_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal9" tabindex="-1" aria-labelledby="ModalLabel9" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="ModalLabel9"><a href="https://borbbertdelays.github.io/SA_ICT9Ruby_Q4SW2_Antonio_Giancarlo/">4th Quater - Seatwork 2</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe9" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9Ruby_Q4SW2_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="Modal10" tabindex="-1" aria-labelledby="ModalLabel10" aria-hidden="true">
+        <div class="modal-dialog modal-fullscreen">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="Modal10"><a href="https://borbbertdelays.github.io/SA_ICT9RubyQ4Quiz1_Antonio_Giancarlo/">4th Quater - Quiz 1</a></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <iframe id="Iframe1p" width="100%" height="600" src="https://borbbertdelays.github.io/SA_ICT9RubyQ4Quiz1_Antonio_Giancarlo/" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <script>
+    // Logout Function
+    function logOut() {
+            window.location.replace("index.html");
+    }
+    </script>
+
+</body>
+</html>

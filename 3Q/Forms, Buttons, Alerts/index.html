@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms, Buttons, Alerts</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <style>
+
+    </style>
+
+</head>
+ 
+<body>
+
+    <div class="form-group">
+
+        <div class="mb-3 col">
+            <label for="email" class="col-sm-2">Email</label>
+
+            <div class="col-sm-10">
+            <input class="form-control" type="text" placeholder="Enter email" aria-label="Enter email" id="email">
+            </div>
+
+          </div>
+
+          <div class="mb-3 col">
+            <label for="inputPassword" class="col-sm-2 col-form-label">Password</label>
+
+            <div class="col-sm-10">
+            <input type="password" class="form-control" id="inputPassword">
+            </div>
+
+            <br>
+            
+            <div>
+                <textarea class="form-control" rows="5" placeholder="Leave a comment here" id="comment"></textarea>
+            </div>
+
+            <div class="form-check">
+                <label>
+                <input class="form-check-input" type="checkbox" id="flexCheckDefault">
+                  Remember me
+                </label>
+              </div>
+
+              <div class="form-check">
+                <label>
+                <input class="form-check-input" type="radio" name="optradio">
+                Option 1
+                </label>
+              </div>
+
+              <br>
+
+              <div class="form-check">
+                <label for="sel1">Select List:</label>
+                <select class="form-select" id="sel1">
+                    <option selected>Open this select menu</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+              </div>
+
+              <br>
+
+              <div>
+                <button type="button" class="btn">Basic</button>
+                <button type="button" class="btn btn-primary">Primary</button>
+                <button type="button" class="btn btn-outline-primary">Primary Outline</button>
+                <button type="button" class="btn btn-primary btn-lg">LARGE</button>
+                <button type="button" class="btn btn-primary btn-block">Full Width Button</button>
+                <button type="button" class="btn btn-primary active">Active</button>
+                <button type="button" class="btn btn-primary disabled">Disabled</button>
+              </div>
+
+              <br>
+
+              <div class="alert alert-success">
+                <strong>Success!</strong> Indicates a successful or positive action.
+              </div>
+
+        </div>
+
+    </div>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
